@@ -1,10 +1,17 @@
 // what imports will you need?
 
-// can you remember how to set up your main function?
+public class ControlFlow {
+  public static void main(String[] args) {
+    int num = Integer.parseInt(args[0]);
+    System.out.println(oddOrEven(num));
+  }
 
-// find a way to read in user input
-
-// write a method that will check if a number is odd or even
-// (assume user only ever enters integers)
-
-// print the answer to the console
+  private static String oddOrEven(int num) {
+    if (num % 2 == 0) {
+      return num + " is even";
+    }
+    else {
+      return num + " is odd";
+    }
+  }
+}
